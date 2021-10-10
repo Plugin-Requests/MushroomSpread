@@ -1,0 +1,17 @@
+name: MushroomSpread
+description: Stop mushrooms from spreading.
+
+author: SavageAvocado
+website: https://www.savagedev.net/
+
+version: ${version}
+main: net.savagedev.mushroomspread.MushroomSpread
+api-version: 1.13
+
+commands:
+  mushroomspread:
+    permission: mushroomspread.use
+
+permissions:
+  mushroomspread.use:
+    default: op
