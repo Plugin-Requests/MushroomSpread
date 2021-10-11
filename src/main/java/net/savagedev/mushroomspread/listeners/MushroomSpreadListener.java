@@ -15,8 +15,8 @@ public class MushroomSpreadListener implements Listener {
 
     @EventHandler
     public void on(BlockSpreadEvent event) {
-        if (!this.mushroomSpread.getConfig().getBoolean("enabled")) {
-            return; // Mushroom spread plugin not enabled.
+        if (this.mushroomSpread.getConfig().getBoolean("enabled")) {
+            return; // Mushroom spread enabled.
         }
 
         // The resulting block's type.
