@@ -19,8 +19,8 @@ public class MushroomSpreadListener implements Listener {
             return; // Mushroom spread enabled.
         }
 
-        // The resulting block's type.
-        final Material material = event.getBlock().getType();
+        // The source block's type.
+        final Material material = event.getNewState().getType();
 
         // It's a mushroom. Cancel the event.
         if (material == Material.BROWN_MUSHROOM || material == Material.RED_MUSHROOM) {
